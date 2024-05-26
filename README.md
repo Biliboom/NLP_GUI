@@ -5,6 +5,7 @@ First, the user can input text and run a BERT sentiment analysis prediction on i
 Second, the user can choose to train their own model by uploading a datafile of their choosing. Once training is complete, the program saves their model as a pickle file in the folder Your_Pickle. If they want, the user can then use this trained model to predict sentiment as explained above. <br><br>
 The pre-trained models are found in the Pickle folder, originating from the ADA project.<br><br>
 For each one of the classification methods, there is a prediction .py file, where the required code to run predictions for the associated classifier is present (NN_prediction.py, XGBoost_prediction.py, RF_prediction.py). These files are essential for the first half of the GUI. One can also find the .py files for each classification method that contain the script for training one's own model (BERT_NN_GUI.py, BERT_XGBOOST_GUI.py, and BERT_RF_GUI.py). These files vary slightly from those found in the ADA repository.<br><br>
+Unfortunately due to an oversight during development of this GUI, the original .py scripts that were used to train the pickle files will also need to be present in the environment when running the GUI for predicitions. This also includes cleaning.py.
 Finally, one can find the cleaning_for_GUI.py file, which contains the code for cleaning datasets into a useable format as well as some other useful functionalities.<br><br>
 
 
