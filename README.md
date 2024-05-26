@@ -8,8 +8,10 @@ For each one of the classification methods, there is a prediction .py file, wher
 Finally, one can find the cleaning_for_GUI.py file, which contains the code for cleaning datasets into a useable format as well as some other useful functionalities.<br><br>
 
 
-Warning: as of current release, you are able to use any trained model for any task when using the prediction functionality. However, for accurate results, use twitter for emotion prediction, imdb for positive/negative, reddit for positive/negative/neutral, and yelp for star ratings. I have not yet found how to make "greyed-out" options, so that it is impossible to predict star ratings on a model that was trained on twitter data.<br><br>
+Warning: as of current release, you are able to use any trained model for any task when using the prediction functionality. However, for accurate results, use twitter for emotion prediction, imdb for positive/negative, reddit for positive/negative/neutral, and yelp for star ratings. I have not yet found how to make "greyed-out" options, so that it is impossible to predict star ratings on a model that was trained on twitter data, for example.<br><br>
 
 Warning: To train a model on your own dataset, please have two columns named 'text' and 'label' in order for the program to function as intended. Possible file extensions are .csv .tsv .parquet <br><br>
 
 Warning: Do NOT train more than 1 dataset for a given classification method. As of current release, if you want to run predictions on your own dataset, the program will only read the first datafile uploaded for a given classification method. If you wish to use a new datafile, you will have to go into the 'Your_Pickle' folder and delete the previous datafile uploaded<br><br>
+
+Note: You will notice that for the second task, the output box for an evaluation graph unfortunately is not present. Due to limited time I was unable to figure out how to include that in the GUI code. As such, it is recommended to run the GUI for training where some kind of terminal is visible, as the classification report is still being printed out there. <br><br>
