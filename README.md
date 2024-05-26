@@ -16,3 +16,5 @@ Warning: To train a model on your own dataset, please have two columns named 'te
 Warning: Do NOT train more than 1 dataset for a given classification method. As of current release, if you want to run predictions on your own dataset, the program will only read the first datafile uploaded for a given classification method. If you wish to use a new datafile, you will have to go into the 'Your_Pickle' folder and delete the previous datafile uploaded<br><br>
 
 Note: You will notice that for the second task, the output box for an evaluation graph unfortunately is not present. Due to limited time I was unable to figure out how to include that in the GUI code. As such, it is recommended to run the GUI for training where some kind of terminal is visible, as the classification report is still being printed out there. <br><br>
+
+Note: File locations will need to be changed in many of the scripts
